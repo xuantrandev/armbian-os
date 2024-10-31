@@ -66,7 +66,7 @@ function pre_customize_image__500_add_ha_to_image() {
 	dpkg-deb -v --build --root-owner-group homeassistant-supervised
 
 	# supervised deb: all
-	declare -g HA_SUPERVISED_VERSION="1.6.0"
+	declare -g HA_SUPERVISED_VERSION="1.8.0"
 	declare -g HA_SUPERVISED_FILENAME="homeassistant-supervised_${HA_SUPERVISED_VERSION}.deb"
 	declare -g HA_SUPERVISED_URL="https://github.com/home-assistant/supervised-installer/releases/download/${HA_SUPERVISED_VERSION}/homeassistant-supervised.deb"
 	declare -g HA_SUPERVISED_CACHE_FILE="${HA_OS_AGENT_CACHE_DIR}/${HA_SUPERVISED_FILENAME}"
